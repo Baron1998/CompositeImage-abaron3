@@ -106,9 +106,9 @@ void makePic(Bitmap &image,Bitmap (&images)[10],int files)
         image = images[0];
         bmp2 = image.toPixelMatrix();
 
-        for(int f = 0;f<files;f++)
+        for(int file = 0;file<files;file++)
         {
-                bmp = images[f].toPixelMatrix();
+                bmp = images[file].toPixelMatrix();
 
                 for(int h = 0; h<bmp2.size(); h++)  //h = hight 
                 { 
@@ -132,7 +132,7 @@ void makePic(Bitmap &image,Bitmap (&images)[10],int files)
                         }
 
                 }
-                cout <<"Image "<< f+1 << " Out of "<< files<< " Completed" << endl; 
+                cout <<"Image "<< file+1 << " Out of "<< files<< " Completed" << endl; 
         }   
         image.fromPixelMatrix(bmp2);
 
