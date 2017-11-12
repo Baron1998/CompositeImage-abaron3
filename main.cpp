@@ -116,7 +116,7 @@ void makePic(Bitmap &image,Bitmap (&images)[10],int files)
                         for(int w = 0; w<bmp2[0].size(); w++) // w = width
                         {
 
-                                if(f >0)
+                                if(file >0)
                                 {   
                                         rgb = bmp[h][w];
                                         rgb2 = bmp2[h][w];
