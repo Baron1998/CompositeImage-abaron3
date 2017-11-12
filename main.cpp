@@ -11,7 +11,7 @@ using namespace std;
 int checkSize(Bitmap ,Bitmap );
 
 // Function to combine images
-void makePic(Bitmap & image ,Bitmap (&images)[10] ,int );
+void makePic(Bitmap & , Bitmap (&images)[10] ,int );
 
 int main()
 {
