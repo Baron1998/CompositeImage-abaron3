@@ -26,7 +26,7 @@ int main()
         
         do{
                 // Get the file names from the users
-                cout<< "Enter a file name (notice the file need to be in BMP format)\n";
+                cout<< "Enter 10 files name (notice the file need to be in BMP format) or DONE if you have entered enough files \n";
                 cin>> name;
 
                 //  if the user inputs "DONE" the program will break from the loop
@@ -92,7 +92,7 @@ int checkSize (Bitmap image, Bitmap imagefirst)
         return 0;
 }
 
-void makePic(Bitmap &image,Bitmap (&images)[10],int files)
+void makePic(Bitmap &image, Bitmap (&images)[10],int files)
 {
         cout <<"files : "<<files <<endl;
         vector <vector <Pixel> > bmp;
