@@ -39,7 +39,7 @@ int main()
 
                 image[files].open(name);
                 BmpImage = image[files].isImage();
-                if(BmpImage = 1) // If the Bmp is valid
+                if(BmpImage == true) // If the Bmp is valid
 
                         check = checkSize(image[files],image[0]);
                         if(check == 1)
