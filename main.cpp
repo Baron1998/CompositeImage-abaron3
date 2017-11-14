@@ -125,9 +125,11 @@ int main()
                                         {   
                                                 rgb = bmp[h][w];
                                                 rgb2 = bmp2[h][w];
-                                                aver = (rgb.red+rgb.green+rgb.blue+rgb2.red+rgb2.green+rgb.blue) / 6;
+                                                aver = (rgb.red+rgb2.red) / 2;
                                                 rgb2.red = aver;
+                                                aver = (rgb.green + rgb2.green) /2;
                                                 rgb2.green = aver;
+                                                aver = (rgb.blue + rgb2.blue) /2;
                                                 rgb2.blue = aver;
 
                                                 bmp2[h][w] = rgb2;  
